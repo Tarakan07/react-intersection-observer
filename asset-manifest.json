@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-intersection-observer/static/css/main.b842003d.css",
+    "main.js": "/react-intersection-observer/static/js/main.8158b618.js",
+    "index.html": "/react-intersection-observer/index.html",
+    "main.b842003d.css.map": "/react-intersection-observer/static/css/main.b842003d.css.map",
+    "main.8158b618.js.map": "/react-intersection-observer/static/js/main.8158b618.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b842003d.css",
+    "static/js/main.8158b618.js"
+  ]
+}
