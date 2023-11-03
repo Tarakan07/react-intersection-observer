@@ -1,0 +1,70 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+body * {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+}
+.list_cat {
+	width: 20%;
+	display: flex;
+
+	align-items: center;
+}
+.list_cat ul {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+}
+.list_cat ul li {
+	list-style: none;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.list_post {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+
+	padding: 25px;
+	height: 50%;
+	padding-top: 50px;
+	flex: 1;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+.list_post div {
+	border: 1px solid blue;
+	border-radius: 10px;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+/* Работает в Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: blue transparent;
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: blue;
+	border-radius: 20px;
+}

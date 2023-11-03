@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, { useState } from "react";
+import Header from "./Header";
+import Scroll from "./scroll";
+const App = () => {
+	const [comp, setComp] = useState(true);
+	return (
+		<>
+			<div
+				style={{
+					position: "fixed",
+					zIndex: 999,
+					top: "50%",
+				}}
+			>
+				<button
+					onClick={() => setComp((prev) => !prev)}
+					style={{
+						border: "none",
+						outline: "none",
+						background: "#000",
+						color: "#fff",
+						padding: "10px 15px",
+						borderRadius: "20px",
+						cursor: "pointer",
+					}}
+				>
+					Change component
+				</button>
+			</div>
+			{comp ? <Header /> : <Scroll />}
+		</>
+	);
+};
 
 export default App;
